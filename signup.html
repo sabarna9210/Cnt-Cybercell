@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+  
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+
+<header>
+	
+<nav>
+	<div class="logo"><img src="images/icons8-cyber-security-50.png" class="website-logo"> <h1 style="font-size: 20px;"> Cyber Security </h1> </div>
+  <div class="logo_ashok"><img src="images/pngwing.com.png" alt=""></div>
+	<div class="menu">
+		<a href="index.html" style="font: size 10px; ">Home</a>
+		<a href="report_crime.html">Report<br>crime</a>
+		<a href="about.html">About</a>
+		<a href="#">contact</a>
+	</div>
+</nav>
+
+	<main>
+		<section>
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+          </div>
+          <form id="login" class="input-group">
+            <input type="text" id="username" class="input-field" placeholder="User ID" required>
+            <input type="text" id="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" is="condition" class="check-box"><span class="condition"> Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+          <form id="signup" class="input-group">
+            <input type="text" id="username" class="input-field" placeholder="User ID" required>
+            <input type="email" id="email-id" class="input-field" placeholder="Email ID" required>
+            <input type="text" id="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" id="condition" class="check-box"><span class="condition">I agree to terms & conditions</span>
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </form>
+        </div>
+		</section>
+	</main>
+
+
+</header>
+<script type="text/javascript">
+  var x= document.getElementById("login");
+  var y= document.getElementById("signup");
+  var z= document.getElementById("btn");
+
+  function signup(){
+    x.style.left="-400px"
+    y.style.left="50px"
+    z.style.left="110px"
+  }
+  function login(){
+    x.style.left="50px"
+    y.style.left="450px"
+    z.style.left="0px"
+  }
+</script>
+</body>
+</html>
